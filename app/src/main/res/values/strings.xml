@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="editar_direccion">Editar direccion</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="editar_contrase_a">Editar contraseña</string>
+    <string name="metodo_de_pago">Metodo de Pago</string>
+    <string name="editar_perfil_">Editar Perfil</string>
+    <string name="fecha">Fecha:</string>
+    <string name="contrasena">****</string>
+    <string name="celular">935184381</string>
+    <string name="select">Select Item</string>
+    <string name="nombre">Nombre:</string>
+    <string name="arnold_pajuelo">Arnold Pajuelo</string>
+    <string name="gmail">Gmail:</string>
+    <string name="contrase_a">Contraseña:</string>
+    <string name="arnold_pajuelo_usil_pe">arnold.pajuelo@usil.pe</string>
+    <string name="numero_de_documento">Numero de Documento:</string>
+    <string name="tipo_de_documento">Tipo de Documento:</string>
+    <string name="guardar_cambios">Guardar Cambios</string>
+    <string name="celular_">Celular:</string>
+    <string-array name="TypeDocument">
+        <item>DNI</item>
+        <item>Pasaporte</item>
+    </string-array>
+</resources>
