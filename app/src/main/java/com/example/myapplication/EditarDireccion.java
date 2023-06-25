@@ -2,20 +2,16 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 
 
@@ -25,7 +21,9 @@ public class EditarDireccion extends AppCompatActivity  {
     RecyclerView recycle;
     EditText direccion,distrito;
     AdaptadorPersona ap;
+    Button siguiente;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +36,12 @@ public class EditarDireccion extends AppCompatActivity  {
         recycle.setLayoutManager(l);
         ap=new AdaptadorPersona();
         recycle.setAdapter(ap);
+        siguiente = findViewById(R.id.volverdireccion);
+        siguiente.setOnClickListener(view -> {
+            Toast.makeText(EditarDireccion.this, "", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(EditarDireccion.this,Servicio.class));
+        });
+
     }
 
     public void agregar(View v)

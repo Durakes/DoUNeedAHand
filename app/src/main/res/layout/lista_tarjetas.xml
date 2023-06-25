@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple"
+        android:id="@+id/viewBackground">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/deleteIcon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Tarjeta de Crédito"
+            android:src="@drawable/ic_baseline_delete_24"   />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@id/deleteIcon"
+            android:layout_toLeftOf="@id/deleteIcon"
+            android:text="Eliminar"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:layout_height="73dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageTarjeta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageTarjeta"
+            android:layout_toRightOf="@id/imageTarjeta"
+            android:orientation="vertical"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTarjeta"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
+                android:text="Tarjetas: "
+                android:textColor="#999999" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="16dp"
+                android:maxLines="1"
+                android:id="@+id/txtDescrpcion"
+                android:ellipsize="end"
+                android:paddingRight="16dp"
+                android:text="Descripcion:"
+                android:textColor="#999999" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:background="#DBDBDB"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

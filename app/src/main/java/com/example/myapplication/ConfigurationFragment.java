@@ -64,6 +64,14 @@ public class ConfigurationFragment extends Fragment {
             }
         });
 
+        Button btnEditPagoActivity = (Button) view.findViewById(R.id.pago);
+        btnEditPagoActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),MetodosTarjeta.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }

@@ -96,8 +96,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/btnConfirmar"
-                android:text="Confirmar"
+                android:id="@+id/volverdireccion"
+                android:text="VOLVER"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/purple"
