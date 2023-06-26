@@ -51,8 +51,10 @@ public class MenuFragment extends Fragment {
         btnEditPerfActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),EditarPerfil.class);
+                Intent intent = new Intent(getActivity(), Limpieza.class);
                 startActivity(intent);
             }
         });
+        return view;
+    }
 }
