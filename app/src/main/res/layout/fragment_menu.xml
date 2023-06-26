@@ -1,15 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@drawable/pantallas"
+        tools:context=".ui.menu.MenuFragment">
+
+        <Button
+            android:id="@+id/gasfitero"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="236dp"
+            android:backgroundTint="#49698F"
+            android:text="Gasfitero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/tecnicos"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="236dp"
+            android:backgroundTint="#49698F"
+            android:text="Tecnico"
+            android:textSize="12.5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/limpiezas"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:backgroundTint="#49698F"
+            android:text="limpieza"
+            android:textSize="12.5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/mecanico"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:backgroundTint="#49698F"
+            android:text="Mecanico"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tecnicos"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/jardinero"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:backgroundTint="#49698F"
+            android:text="Jardinero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mecanico"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
