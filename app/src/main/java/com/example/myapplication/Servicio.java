@@ -19,6 +19,9 @@ public class Servicio extends AppCompatActivity {
         binding =  ActivityServicioBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.bottomNavigation.setSelectedItemId(R.id.menu);
+        replaceFragment(new MenuFragment());
+
         binding.bottomNavigation.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()){
@@ -37,11 +40,18 @@ public class Servicio extends AppCompatActivity {
                     replaceFragment(new PerfilFragment());
                     break;
 
+                /*default:
+                    replaceFragment(new HistorialFragment());
+                    break;*/
+
             }
 
 
             return true;
         });
+
+
+
     }
 
     private void replaceFragment(Fragment fragment){
