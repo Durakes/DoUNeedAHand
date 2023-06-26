@@ -101,7 +101,7 @@ public class Limpieza extends AppCompatActivity {
         initCounterBano();
         siguiente = findViewById(R.id.siguiente);
         siguiente.setOnClickListener(view -> {
-            Toast.makeText(Limpieza.this,"Ultimo Paso",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Limpieza.this,"Siguiente Paso",Toast.LENGTH_SHORT).show();
             startActivity(new Intent(Limpieza.this,SiguientePantalla.class));
         });
 

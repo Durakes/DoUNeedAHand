@@ -4,6 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/configuration"
     tools:context=".SiguientePantalla">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escoge la fecha y hora en la que deseas que se realice el servicio"
+                android:id="@+id/fechaText"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#49698F"/>
+
+            <LinearLayout
+                android:id="@+id/menuLinearLayoutFecha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midTableLayout"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/bfecha"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#49698F"
+                    android:text="fecha" />
+
+                <EditText
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/efecha"
+                    android:layout_width="155dp"
+                    android:layout_height="50dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuLinearLayouHora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midTableLayout"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/bhora"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#49698F"
+                    android:text="Hora" />
+
+                <EditText
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/ehora"
+                    android:layout_width="155dp"
+                    android:layout_height="50dp">
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/siguiente"
+                android:text="Siguiente"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#49698F"
+                app:cornerRadius = "15dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

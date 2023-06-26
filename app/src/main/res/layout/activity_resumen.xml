@@ -1,0 +1,197 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/configuration"
+    tools:context=".Resumen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resumen del servicio Solicitado"
+                android:id="@+id/resument"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#49698F"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PRECIO"
+                android:textAlignment="center"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:text="El pecio total es de : S/120.00"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fecha"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Fecha:"
+                android:textColor="#49698F"/>
+
+            <EditText
+                android:layout_marginTop="0dp"
+                android:id="@+id/efecha"
+                android:layout_width="295dp"
+                android:layout_height="50dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hora"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Hora:"
+                android:textColor="#49698F"/>
+
+            <EditText
+                android:layout_marginTop="0dp"
+                android:id="@+id/ehora"
+                android:layout_width="295dp"
+                android:layout_height="50dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/direccion"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Direccion:"
+                android:textColor="#49698F"/>
+
+            <EditText
+                android:layout_marginTop="0dp"
+                android:id="@+id/edireccion"
+                android:layout_width="295dp"
+                android:layout_height="50dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/area"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Area a limpiar:"
+                android:textColor="#49698F"/>
+
+            <LinearLayout
+                android:id="@+id/menuLinearLayouArea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midTableLayout"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaDormitrio"
+                    android:textSize="19sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Dormitorios:"
+                    android:textColor="#49698F"/>
+
+                <EditText
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/edormitorios"
+                    android:layout_width="295dp"
+                    android:layout_height="50dp">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuLinearLayouASala"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midTableLayout"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaSala"
+                    android:textSize="19sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Salas:"
+                    android:textColor="#49698F"/>
+
+                <EditText
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/eSalas"
+                    android:layout_width="295dp"
+                    android:layout_height="50dp">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuLinearLayouTBano"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midTableLayout"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaBano"
+                    android:textSize="19sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Baños:"
+                    android:textColor="#49698F"/>
+
+                <EditText
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/eBano"
+                    android:layout_width="295dp"
+                    android:layout_height="50dp">
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/confirmar"
+                android:text="Confirmar Solicitud"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#49698F"
+                app:cornerRadius = "15dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
