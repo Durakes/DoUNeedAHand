@@ -50,4 +50,6 @@ public class Servicio extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frameLayout2,fragment);
         fragmentTransaction.commit();
     }
+
+
 }
