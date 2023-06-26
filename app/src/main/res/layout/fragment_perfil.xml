@@ -149,6 +149,7 @@
                 android:background="@drawable/custom_edittext"
                 android:drawablePadding="8dp"
                 android:padding="8dp"
+                android:hint="72160475"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="0dp"/>

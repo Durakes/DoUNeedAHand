@@ -29,6 +29,7 @@ public class Servicio extends AppCompatActivity {
                 case R.id.configuration:
                     replaceFragment(new ConfigurationFragment());
                     break;
+
                 case R.id.menu:
                     replaceFragment(new MenuFragment());
                     break;

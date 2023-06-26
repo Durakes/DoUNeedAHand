@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Servicio">
 
     <FrameLayout
@@ -16,7 +17,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
-
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
